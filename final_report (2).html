@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-09-29">
+
+<title>The Analysis of Medical Trends in Oropharyngeal Cancer</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="final_report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="final_report_files/libs/quarto-html/quarto.js"></script>
+<script src="final_report_files/libs/quarto-html/popper.min.js"></script>
+<script src="final_report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="final_report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="final_report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="final_report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="final_report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="final_report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="final_report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+<script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.12.1.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="final_report.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Analysis of Medical Trends in Oropharyngeal Cancer</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 29, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><br></p>
+<section id="authors" class="level4">
+<h4 class="anchored" data-anchor-id="authors"><strong>Authors</strong></h4>
+<ul>
+<li>Prathik Bharath Jain</li>
+<li>Bridget Litostansky</li>
+<li>Stephanie Sarette</li>
+<li>Akarsh Reddy Tatimakula</li>
+<li>Md Razeenuddin Mehdi</li>
+<li>Alex Garofalo</li>
+</ul>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>According to the American Cancer Society, <em>“Oropharyngeal cancer is a relatively rare cancer about 53,000 people in the United States develop this cancer each year.”</em> <strong><em><span class="citation" data-cites="noauthor_oropharyngeal_nodate">(<a href="#ref-noauthor_oropharyngeal_nodate" role="doc-biblioref"><span>“Oropharyngeal <span>Cancer</span>: <span>Symptoms</span>, <span>Stages</span> &amp; <span>Prognosis</span>”</span> n.d.</a>)</span></em></strong></p>
+<p>The oropharynx is in the midsection of the throat and along with the nasopharynx and hypopharynx they make up the pharynx section of the throat.</p>
+<p>According to the National Cancer Institute (NCI), the most common risk factors for developing this type of cancer is smoking cigarettes for more than 10 packs a year, being infected with HPV especially HPV-16, and a personal history of head and neck cancer. <strong><em><span class="citation" data-cites="noauthor_oropharyngeal_2023">(<a href="#ref-noauthor_oropharyngeal_2023" role="doc-biblioref"><span>“Oropharyngeal <span>Cancer</span> <span>Treatment</span> - <span>NCI</span>”</span> 2023</a>)</span></em></strong></p>
+</section>
+<section id="questions-of-interest" class="level2">
+<h2 class="anchored" data-anchor-id="questions-of-interest">Questions of Interest</h2>
+<p>Some questions that interested the team as a whole were as follows.</p>
+<ul>
+<li>Is there a primary cancer site that is more common with smokers than with non-smokers?
+</li>
+<li>How likely is it that the cancer contains HPV cells? What treatments are most common among patients with HPV cells? Does treatment take longer for patients with HPV cells than without HPV cells? Does the presence of HPV cells influence how successful treatment is?
+</li>
+<li>What is the survival rate for oropharyngeal cancer? Does gender, age, smoking, treatment type, tumor size and HPV cells influence chances of survival?
+</li>
+<li>Is there a relationship between ECOG PS and the stage of the cancer? How is this influenced by the presence of HPV cells and the size of the tumor?</li>
+<li>What treatment is most commonly used for smokers? Is this treatment more successful if a patient does not currently smoke? Are patients who do smoke more likely to relapse?</li>
+<li>Is there a higher chance of relapse if chemo is used in the treatment?</li>
+<li>If a person was diagnosed prior to 2005, did they relapse/have cancer spread more than those who were diagnosed after 2005? <strong><em><span class="citation" data-cites="noauthor_recurrent_2016">(<a href="#ref-noauthor_recurrent_2016" role="doc-biblioref"><span>“Recurrent <span>Cancer</span> - <span>NCI</span>”</span> 2016</a>)</span></em></strong></li>
+</ul>
+<p>Once the question list was identified, it was broken down into two different visualization sections, one done by Python and one done by Tableau. <br></p>
+</section>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup:</h2>
+<p>We will start importing some libraries such as pandas and matplotlib for data visualization.</p>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> textwrap</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="about-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-dataset">About the Dataset:</h2>
+<p>The dataset chosen for this project comes from the Cancer Imaging Archives website. The dataset is comprised of clinically collected radiation therapy treatment results. It is comprised of 3,346 patients and used 3 different CT scan brand manufacturers to conduct the imaging for these tests. The median patient age for the study is 63 years and is comprised of 80% males and 20% females. <strong><em><span class="citation" data-cites="welch_computed_2023">(<a href="#ref-welch_computed_2023" role="doc-biblioref">Welch et al. 2023</a>)</span></em></strong></p>
+<p>Some possible sources of bias found while cleaning the data set was due to the large population of men in the data set. The conclusions that could be drawn may or may not apply to women, as medical treatments affect genders differently. As such, the conclusions drawn have been from the perspective of males. Another source of bias found is the field for how many packs smoked per year was a best guess field, which a person may or may not have been truthful when answering.</p>
+<p>Here’s a glimpse of the data before data cleaning and manipulation process. The same has been uploaded to the github.</p>
+<p>We have added both the original dataset url and the url for the dataset after the data cleaning step.</p>
+<div class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>orginal_data_url <span class="op">=</span> <span class="st">'https://github.com/prathikbafna/Data-Science-as-a-field/blob/main/data.xlsx'</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>cleaned_data_url <span class="op">=</span> <span class="st">'https://github.com/prathikbafna/Data-Science-as-a-field/blob/main/dtsc_data.xlsx'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now we are importing the dataset from our local machine.</p>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="st">'/Users/bridgetminellono/Desktop/data.xlsx'</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(path)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">patient_id</th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Sex</th>
+<th data-quarto-table-cell-role="th">ECOG PS</th>
+<th data-quarto-table-cell-role="th">Smoking PY</th>
+<th data-quarto-table-cell-role="th">Smoking Status</th>
+<th data-quarto-table-cell-role="th">Ds Site</th>
+<th data-quarto-table-cell-role="th">Subsite</th>
+<th data-quarto-table-cell-role="th">T</th>
+<th data-quarto-table-cell-role="th">N</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">Cause of Death</th>
+<th data-quarto-table-cell-role="th">Local</th>
+<th data-quarto-table-cell-role="th">Date Local</th>
+<th data-quarto-table-cell-role="th">Regional</th>
+<th data-quarto-table-cell-role="th">Date Regional</th>
+<th data-quarto-table-cell-role="th">Distant</th>
+<th data-quarto-table-cell-role="th">Date Distant</th>
+<th data-quarto-table-cell-role="th">2nd Ca</th>
+<th data-quarto-table-cell-role="th">Date 2nd Ca</th>
+<th data-quarto-table-cell-role="th">RADCURE-challenge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>RADCURE-0005</td>
+<td>62.6</td>
+<td>Female</td>
+<td>ECOG 0</td>
+<td>50</td>
+<td>Ex-smoker</td>
+<td>Oropharynx</td>
+<td>post wall</td>
+<td>T4b</td>
+<td>N2c</td>
+<td>...</td>
+<td>Other Cause</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>RADCURE-0006</td>
+<td>87.3</td>
+<td>Male</td>
+<td>ECOG 2</td>
+<td>25</td>
+<td>Ex-smoker</td>
+<td>Larynx</td>
+<td>Glottis</td>
+<td>T1b</td>
+<td>N0</td>
+<td>...</td>
+<td>Other Cause</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>RADCURE-0007</td>
+<td>49.9</td>
+<td>Male</td>
+<td>ECOG 1</td>
+<td>15</td>
+<td>Ex-smoker</td>
+<td>Oropharynx</td>
+<td>Tonsil</td>
+<td>T3</td>
+<td>N2b</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>RADCURE-0009</td>
+<td>72.3</td>
+<td>Male</td>
+<td>ECOG 1</td>
+<td>30</td>
+<td>Ex-smoker</td>
+<td>Unknown</td>
+<td>NaN</td>
+<td>T0</td>
+<td>N2c</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>S (suspecious)</td>
+<td>2008-05-27</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>RADCURE-0010</td>
+<td>59.7</td>
+<td>Female</td>
+<td>ECOG 0</td>
+<td>0</td>
+<td>Non-smoker</td>
+<td>Oropharynx</td>
+<td>Tonsillar Fossa</td>
+<td>T4b</td>
+<td>N0</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>NaN</td>
+<td>NaT</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+
+<p>5 rows × 34 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="data-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
+<p>We can see that all the column names are not meaningful and have spaces in between.</p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.columns</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>Index(['patient_id', 'Age', 'Sex', 'ECOG PS', 'Smoking PY', 'Smoking Status',
+       'Ds Site', 'Subsite', 'T', 'N', 'M ', 'Stage', 'Path', 'HPV',
+       'Tx Modality', 'Chemo? ', 'RT Start', 'Dose', 'Fx', 'RT Tech',
+       'Last FU', 'Status', 'Length FU', 'Date of Death', 'Cause of Death',
+       'Local', 'Date Local', 'Regional', 'Date Regional', 'Distant',
+       'Date Distant', '2nd Ca', 'Date 2nd Ca', 'RADCURE-challenge'],
+      dtype='object')</code></pre>
+</div>
+</div>
+<p>We will now be renaming the columns to aid the process of manipulating data.</p>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.rename(columns <span class="op">=</span> {<span class="st">'T'</span>: <span class="st">'tumor_size'</span>, <span class="st">"Smoking PY"</span>: <span class="st">"annual_packs_smoked"</span>, <span class="st">"Path"</span>: <span class="st">"diagnosis_type"</span>, <span class="st">"Ds Site"</span>: <span class="st">"cancer_site"</span>, <span class="st">"Subsite"</span>: <span class="st">"cancer_subsite"</span>, <span class="st">"Metastasis Status"</span>: <span class="st">"metastasis_status"</span>, <span class="st">"Tx Modality"</span>: <span class="st">"treatment_type"</span>, <span class="st">"RT Tech"</span>: <span class="st">"radio_therapy_type"</span>, <span class="st">"RT Start"</span>: <span class="st">"radio_therapy_startDt"</span>,<span class="st">"Last FU"</span>: <span class="st">"last_follow_up"</span>, <span class="st">"Date of Death"</span>: <span class="st">"date_of_death"</span>, <span class="st">"Cause of Death"</span>: <span class="st">"cause_of_death"</span>, <span class="st">"Smoking Status"</span>: <span class="st">"smoking_status"</span>, <span class="st">"2nd Ca"</span>: <span class="st">"2nd_cancer_site"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now lets assess the null values in the dataset</p>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.shape)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.isnull().<span class="bu">sum</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3346, 34)
+patient_id                  0
+Age                         0
+Sex                         0
+ECOG PS                     1
+annual_packs_smoked         5
+smoking_status              0
+cancer_site                 0
+cancer_subsite            374
+tumor_size                 12
+N                          13
+M                          14
+Stage                      27
+diagnosis_type              0
+HPV                      1629
+treatment_type              0
+Chemo?                      0
+radio_therapy_startDt       0
+Dose                        0
+Fx                          0
+radio_therapy_type          0
+last_follow_up              0
+Status                      0
+Length FU                   0
+date_of_death            2288
+cause_of_death           2294
+Local                    2966
+Date Local               2966
+Regional                 3157
+Date Regional            3157
+Distant                  2933
+Date Distant             2933
+2nd_cancer_site          2905
+Date 2nd Ca              2907
+RADCURE-challenge           0
+dtype: int64</code></pre>
+</div>
+</div>
+<p>Now we try to fix the null values</p>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'smoking_status'</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>Ex-smoker      1290
+Current        1139
+Non-smoker      871
+unknown          45
+non-drinker       1
+Name: smoking_status, dtype: int64</code></pre>
+</div>
+</div>
+<p><strong>Assumption 1:</strong> <em>Since there is only one non-drinker mentioned explicitly in the dataset, we are assuming that the rest of the patients did drink.</em></p>
+<p>Moreover, as there is only a sole non-drinker among a group of around 4000 patients. We can drop this value since it is almost negligible.</p>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">'smoking_status'</span>] <span class="op">!=</span> <span class="st">'non-drinker'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Assumption 2:</strong> <em>We are assuming that the NA values in the HPV columns are patients who didn’t get tested. Hence we choose to replace them with ‘Not tested’</em></p>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'HPV'</span>].fillna(<span class="st">'No'</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now we assess the columns with different types of tumor</p>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'M '</span>].value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="10">
+<pre><code>M0    3327
+MX       2
+M1       2
+Name: M , dtype: int64</code></pre>
+</div>
+</div>
+<p>Percentage of people with M0 (Benign Tumor)</p>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> (<span class="dv">3327</span><span class="op">/</span><span class="dv">3331</span>)<span class="op">*</span><span class="dv">100</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>99.87991594115881</code></pre>
+</div>
+</div>
+<p>We can see that 99.8% of the data is about M0 (Benign Tumor). Hence, we can drop the rows that has MX and M1 and remove the entire column and add in the data description that everybody has M0 (Benign Tumor)</p>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df.drop(<span class="st">'M '</span>, axis <span class="op">=</span> <span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Currently the number of packs smoked is ‘NA’ for people with smoking status ‘Unknown’.</p>
+<p>So we choose to replace them with 0.</p>
+<p>There are 5 such values in the dataset.</p>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'annual_packs_smoked'</span>].fillna(<span class="dv">0</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'cancer_subsite'</span>].fillna(<span class="st">'Unknown'</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We have two columns:</p>
+<ul>
+<li><strong>“Dead”:</strong> <em>Saves the status if the patient is alive or not.</em></li>
+<li><strong>“date_of_death”:</strong> <em>Stores the date when the patient passed away.</em></li>
+</ul>
+<p>We now choose to combine these two columns as an alive person’s ‘date_of_death’ will be null</p>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> df.index:</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(df[<span class="st">"Status"</span>][i] <span class="op">==</span> <span class="st">"Dead"</span>):</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>        df[<span class="st">"Status"</span>][i] <span class="op">==</span> df[<span class="st">"date_of_death"</span>][i]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Assumption 3:</strong> <em>We are assuming that patients with NA values in the column “cause_of_death” are still alive.</em></p>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'cause_of_death'</span>].fillna(<span class="st">'Alive'</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now we replace the null values in the ‘Local’, ‘Regional’, and ‘2nd_cancer_site’ columns with ‘No’. As we would further require them in our data visualization stage.</p>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Local'</span>].fillna(<span class="st">'No'</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Regional'</span>].fillna(<span class="st">'No'</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'2nd_cancer_site'</span>].fillna(<span class="st">'No'</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<pre><code>patient_id                  0
+Age                         0
+Sex                         0
+ECOG PS                     1
+annual_packs_smoked         0
+smoking_status              0
+cancer_site                 0
+cancer_subsite              0
+tumor_size                 12
+N                          13
+Stage                      27
+diagnosis_type              0
+HPV                         0
+treatment_type              0
+Chemo?                      0
+radio_therapy_startDt       0
+Dose                        0
+Fx                          0
+radio_therapy_type          0
+last_follow_up              0
+Status                      0
+Length FU                   0
+date_of_death            2287
+cause_of_death              0
+Local                       0
+Date Local               2966
+Regional                    0
+Date Regional            3156
+Distant                  2932
+Date Distant             2932
+2nd_cancer_site             0
+Date 2nd Ca              2906
+RADCURE-challenge           0
+dtype: int64</code></pre>
+</div>
+</div>
+<p>We have around 3346 rows, and in few columns more than 80% of the data is empty.</p>
+<p>Hence, we choose to drop those columns in order to further clean the dataset.</p>
+<div class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df.drop(columns <span class="op">=</span> [<span class="st">'Date Local'</span>, <span class="st">'Date Regional'</span>, <span class="st">'Distant'</span>, <span class="st">'Date Distant'</span>, <span class="st">'Date 2nd Ca'</span>, <span class="st">'RADCURE-challenge'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">patient_id</th>
+<th data-quarto-table-cell-role="th">Age</th>
+<th data-quarto-table-cell-role="th">Sex</th>
+<th data-quarto-table-cell-role="th">ECOG PS</th>
+<th data-quarto-table-cell-role="th">annual_packs_smoked</th>
+<th data-quarto-table-cell-role="th">smoking_status</th>
+<th data-quarto-table-cell-role="th">cancer_site</th>
+<th data-quarto-table-cell-role="th">cancer_subsite</th>
+<th data-quarto-table-cell-role="th">tumor_size</th>
+<th data-quarto-table-cell-role="th">N</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">Fx</th>
+<th data-quarto-table-cell-role="th">radio_therapy_type</th>
+<th data-quarto-table-cell-role="th">last_follow_up</th>
+<th data-quarto-table-cell-role="th">Status</th>
+<th data-quarto-table-cell-role="th">Length FU</th>
+<th data-quarto-table-cell-role="th">date_of_death</th>
+<th data-quarto-table-cell-role="th">cause_of_death</th>
+<th data-quarto-table-cell-role="th">Local</th>
+<th data-quarto-table-cell-role="th">Regional</th>
+<th data-quarto-table-cell-role="th">2nd_cancer_site</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>RADCURE-0005</td>
+<td>62.6</td>
+<td>Female</td>
+<td>ECOG 0</td>
+<td>50</td>
+<td>Ex-smoker</td>
+<td>Oropharynx</td>
+<td>post wall</td>
+<td>T4b</td>
+<td>N2c</td>
+<td>...</td>
+<td>25</td>
+<td>IMRT</td>
+<td>2003-05-12</td>
+<td>Dead</td>
+<td>1.317808</td>
+<td>2003-05-12</td>
+<td>Other Cause</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>RADCURE-0006</td>
+<td>87.3</td>
+<td>Male</td>
+<td>ECOG 2</td>
+<td>25</td>
+<td>Ex-smoker</td>
+<td>Larynx</td>
+<td>Glottis</td>
+<td>T1b</td>
+<td>N0</td>
+<td>...</td>
+<td>20</td>
+<td>IMRT</td>
+<td>2007-06-28</td>
+<td>Dead</td>
+<td>1.520548</td>
+<td>2007-06-28</td>
+<td>Other Cause</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>RADCURE-0007</td>
+<td>49.9</td>
+<td>Male</td>
+<td>ECOG 1</td>
+<td>15</td>
+<td>Ex-smoker</td>
+<td>Oropharynx</td>
+<td>Tonsil</td>
+<td>T3</td>
+<td>N2b</td>
+<td>...</td>
+<td>40</td>
+<td>IMRT</td>
+<td>2011-12-05</td>
+<td>Alive</td>
+<td>2.126027</td>
+<td>NaT</td>
+<td>Alive</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>RADCURE-0009</td>
+<td>72.3</td>
+<td>Male</td>
+<td>ECOG 1</td>
+<td>30</td>
+<td>Ex-smoker</td>
+<td>Unknown</td>
+<td>Unknown</td>
+<td>T0</td>
+<td>N2c</td>
+<td>...</td>
+<td>35</td>
+<td>IMRT</td>
+<td>2008-05-27</td>
+<td>Alive</td>
+<td>5.791781</td>
+<td>NaT</td>
+<td>Alive</td>
+<td>No</td>
+<td>No</td>
+<td>S (suspecious)</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>RADCURE-0010</td>
+<td>59.7</td>
+<td>Female</td>
+<td>ECOG 0</td>
+<td>0</td>
+<td>Non-smoker</td>
+<td>Oropharynx</td>
+<td>Tonsillar Fossa</td>
+<td>T4b</td>
+<td>N0</td>
+<td>...</td>
+<td>40</td>
+<td>IMRT</td>
+<td>2010-05-25</td>
+<td>Alive</td>
+<td>9.512329</td>
+<td>NaT</td>
+<td>Alive</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3341</td>
+<td>RADCURE-4126</td>
+<td>58.3</td>
+<td>Male</td>
+<td>ECOG 0</td>
+<td>50</td>
+<td>Ex-smoker</td>
+<td>Oropharynx</td>
+<td>Tonsil Pillar</td>
+<td>T2</td>
+<td>N0</td>
+<td>...</td>
+<td>35</td>
+<td>IMRT</td>
+<td>2007-07-10</td>
+<td>Dead</td>
+<td>8.189041</td>
+<td>2007-07-10</td>
+<td>Other Cancer</td>
+<td>No</td>
+<td>No</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3342</td>
+<td>RADCURE-4127</td>
+<td>52.4</td>
+<td>Female</td>
+<td>ECOG 0</td>
+<td>30</td>
+<td>Current</td>
+<td>Oropharynx</td>
+<td>Base of Tongue</td>
+<td>T2</td>
+<td>N2b</td>
+<td>...</td>
+<td>35</td>
+<td>IMRT</td>
+<td>2012-01-17</td>
+<td>Alive</td>
+<td>5.739726</td>
+<td>NaT</td>
+<td>Alive</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3343</td>
+<td>RADCURE-4128</td>
+<td>71.3</td>
+<td>Male</td>
+<td>ECOG 1</td>
+<td>50</td>
+<td>Ex-smoker</td>
+<td>Oropharynx</td>
+<td>Soft Palate</td>
+<td>T2</td>
+<td>N0</td>
+<td>...</td>
+<td>35</td>
+<td>IMRT</td>
+<td>2008-04-06</td>
+<td>Alive</td>
+<td>5.824658</td>
+<td>NaT</td>
+<td>Alive</td>
+<td>No</td>
+<td>No</td>
+<td>Y</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3344</td>
+<td>RADCURE-4129</td>
+<td>53.9</td>
+<td>Female</td>
+<td>ECOG 0</td>
+<td>5</td>
+<td>Current</td>
+<td>Oropharynx</td>
+<td>Tonsillar Fossa</td>
+<td>T2</td>
+<td>N2b</td>
+<td>...</td>
+<td>35</td>
+<td>IMRT</td>
+<td>2002-02-07</td>
+<td>Dead</td>
+<td>0.912329</td>
+<td>2002-02-07</td>
+<td>Other Cause</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">3345</td>
+<td>RADCURE-4130</td>
+<td>85.5</td>
+<td>Male</td>
+<td>ECOG 2</td>
+<td>15</td>
+<td>Ex-smoker</td>
+<td>Skin</td>
+<td>Nose</td>
+<td>T2</td>
+<td>N0</td>
+<td>...</td>
+<td>35</td>
+<td>IMRT</td>
+<td>2008-11-18</td>
+<td>Dead</td>
+<td>1.523288</td>
+<td>2008-11-18</td>
+<td>Other Cause</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<p>3345 rows × 27 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="data-visualization-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization-analysis">Data Visualization &amp; Analysis:</h2>
+<hr>
+<p><br></p>
+<section id="figure-1" class="level4">
+<h4 class="anchored" data-anchor-id="figure-1">Figure 1:</h4>
+<p>The first thing we wanted to look at was if there was a primary cancer site that is more common in smokers than non-smokers.</p>
+<div class="cell" data-execution_count="18">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>smoking_df <span class="op">=</span> df.groupby(<span class="st">'cancer_site'</span>).smoking_status.value_counts().unstack()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>smokingSite <span class="op">=</span>smoking_df.plot(kind<span class="op">=</span><span class="st">'barh'</span>,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>        stacked<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">'Diagnosis site by smoking status'</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>        ylabel <span class="op">=</span> <span class="st">"Cancer Site"</span>,</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        xlabel <span class="op">=</span> <span class="st">"Count"</span>)<span class="op">;</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>smokingSite.legend([<span class="st">'Current'</span>, <span class="st">'Ex-Smoker'</span>,<span class="st">'Non-Smoker'</span>, <span class="st">'Unknown'</span>], title <span class="op">=</span> <span class="st">'Smoking Status'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="final_report_files/figure-html/cell-19-output-1.png" width="680" height="449"></p>
+</div>
+</div>
+<p>In Figure 1 we can see that the most common cancer sites for smokers and ex-smokers are the Oropharynx and the Larynx, while the Nasopharynx is more common in patients who do not smoke.</p>
+<p>Then we looked at how likely HPV cells were present in the cancer based on the location site of the cancer.</p>
+</section>
+<section id="figure-2" class="level4">
+<h4 class="anchored" data-anchor-id="figure-2">Figure 2:</h4>
+<div class="cell" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>hpv_df <span class="op">=</span> df.groupby(<span class="st">'HPV'</span>).cancer_site.value_counts().unstack()</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>hpvSite <span class="op">=</span> hpv_df.plot(kind<span class="op">=</span><span class="st">'barh'</span>, stacked<span class="op">=</span><span class="va">True</span>, title<span class="op">=</span><span class="st">'HPV status by diagnosis site'</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>hpvSite.legend(loc <span class="op">=</span> <span class="st">'upper left'</span>, bbox_to_anchor<span class="op">=</span>(<span class="fl">1.0</span>, <span class="fl">1.0</span>))</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>plt.yticks([<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="st">'Not Tested'</span>, <span class="st">'Negative'</span>, <span class="st">'Positive'</span>])<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="final_report_files/figure-html/cell-20-output-1.png" width="806" height="431"></p>
+</div>
+</div>
+<p>We also wanted to look at the distribution of treatment types among the patients.</p>
+</section>
+<section id="figure-3" class="level4">
+<h4 class="anchored" data-anchor-id="figure-3">Figure 3:</h4>
+<div class="cell" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the treatment type column in the date frame</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>combined_treatment_type_counts <span class="op">=</span> df[<span class="st">'treatment_type'</span>].value_counts()</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Assign colors to each treatment type</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>adjusted_color_palette <span class="op">=</span> [<span class="st">"#00008B"</span>, <span class="st">"#FF4500"</span>, <span class="st">"#32CD32"</span>, <span class="st">"#FF69B4"</span>]  <span class="co"># Corrected color codes</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Assign descriptions to each treatment type</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>descriptions <span class="op">=</span> {</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"RT alone"</span>: <span class="st">"This represents cases where only Radiation Therapy is used as the treatment method."</span>,</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"ChemoRT"</span>: <span class="st">"This represents cases where a combination of Chemotherapy and Radiation Therapy is used for treatment."</span>,  <span class="co"># Corrected key and description</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"RT + EGFRI"</span>: <span class="st">"This represents cases where Radiation Therapy is combined with Epidermal Growth Factor Receptor Inhibitor for treatment."</span>,</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Postop RT alone"</span>: <span class="st">"This represents cases where only Postoperative Radiation Therapy is used, typically after a surgical procedure."</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate percentage of each treatment type and provide descriptions for each treatment type</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>labels_with_descriptions <span class="op">=</span> []</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> label, count <span class="kw">in</span> <span class="bu">zip</span>(combined_treatment_type_counts.index, combined_treatment_type_counts):</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>    pct <span class="op">=</span> <span class="dv">100</span> <span class="op">*</span> count <span class="op">/</span> combined_treatment_type_counts.<span class="bu">sum</span>()  <span class="co"># Percentage</span></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>    description <span class="op">=</span> descriptions.get(label, <span class="st">''</span>)  <span class="co"># Matching with description keys</span></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>    indented_description <span class="op">=</span> <span class="st">'</span><span class="ch">\n</span><span class="st">    '</span>.join(textwrap.wrap(description, width<span class="op">=</span><span class="dv">30</span>))</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>    labels_with_descriptions.append(<span class="ss">f"</span><span class="sc">{</span>label<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span>pct<span class="sc">:.1f}</span><span class="ss">%)</span><span class="ch">\n</span><span class="ss">    </span><span class="sc">{</span>indented_description<span class="sc">}</span><span class="ss">."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="21">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Create the plot for each treatment type</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>plt.pie(combined_treatment_type_counts, textprops<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">"w"</span>), startangle<span class="op">=</span><span class="dv">140</span>, colors<span class="op">=</span>adjusted_color_palette, wedgeprops<span class="op">=</span><span class="bu">dict</span>(width<span class="op">=</span><span class="fl">0.4</span>))</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>plt.gca().add_artist(plt.Circle((<span class="dv">0</span>, <span class="dv">0</span>), <span class="fl">0.70</span>, fc<span class="op">=</span><span class="st">'white'</span>))</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">'upper left'</span>, bbox_to_anchor<span class="op">=</span>(<span class="fl">1.0</span>, <span class="fl">1.0</span>), labels<span class="op">=</span>labels_with_descriptions)</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Distribution of Treatment Types'</span>)</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'equal'</span>)</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="final_report_files/figure-html/cell-22-output-1.png" width="1042" height="778"></p>
+</div>
+</div>
+<p>Figure 3 shows that the majority of treaments use only radiation therapy (55.5%). However, there is also a large number of patients who receive chemotherapy along with the radiation therapy (42.2%).</p>
+<p>We then took this a step further and looked at how often each treatment type is used based on the site of the cancer.</p>
+</section>
+<section id="figure-4" class="level4">
+<h4 class="anchored" data-anchor-id="figure-4">Figure 4:</h4>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Set up</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'treatment_type'</span>] <span class="op">=</span> df[<span class="st">'treatment_type'</span>].<span class="bu">str</span>.rstrip()</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>ct <span class="op">=</span> pd.crosstab(df[<span class="st">'cancer_site'</span>], df[<span class="st">'treatment_type'</span>])</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>ct_filtered <span class="op">=</span> ct[ct.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>) <span class="op">&gt;=</span> <span class="dv">100</span>]</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>ct_filtered <span class="op">=</span> ct_filtered.drop(index<span class="op">=</span><span class="st">'Unknown'</span>, errors<span class="op">=</span><span class="st">'ignore'</span>)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>ct_filtered.loc[<span class="st">'Total'</span>] <span class="op">=</span> ct_filtered.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>ct_normalized_filtered <span class="op">=</span> ct_filtered.div(ct_filtered.<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>), axis<span class="op">=</span><span class="dv">0</span>) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>ct_normalized_filtered</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="22">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">treatment_type</th>
+<th data-quarto-table-cell-role="th">ChemoRT</th>
+<th data-quarto-table-cell-role="th">Postop RT alone</th>
+<th data-quarto-table-cell-role="th">RT + EGFRI</th>
+<th data-quarto-table-cell-role="th">RT alone</th>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">cancer_site</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Hypopharynx</td>
+<td>37.037037</td>
+<td>0.617284</td>
+<td>4.320988</td>
+<td>58.024691</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Larynx</td>
+<td>10.832383</td>
+<td>0.114025</td>
+<td>1.026226</td>
+<td>88.027366</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Lip &amp; Oral Cavity</td>
+<td>21.000000</td>
+<td>0.000000</td>
+<td>5.000000</td>
+<td>74.000000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Nasopharynx</td>
+<td>87.887324</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>12.112676</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Oropharynx</td>
+<td>51.565623</td>
+<td>0.000000</td>
+<td>3.197868</td>
+<td>45.236509</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">Total</td>
+<td>42.136895</td>
+<td>0.066778</td>
+<td>2.303840</td>
+<td>55.492487</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># colors</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>colors_dict <span class="op">=</span> {</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'RT alone'</span>: <span class="st">'black'</span>,</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'RT + EGFR'</span>: <span class="st">'red'</span>,</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'RT + ICI'</span>: <span class="st">'purple'</span>,</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'RT + Other'</span>: <span class="st">'yellow'</span>,</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Create figure</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> treatment_type, color <span class="kw">in</span> <span class="bu">zip</span>(ct_normalized_filtered.columns, colors_dict.values()):</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>    fig.add_trace(go.Bar(</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span>[<span class="ss">f"</span><span class="sc">{</span>index<span class="sc">}</span><span class="ss"> (Patients: </span><span class="sc">{</span>ct_filtered<span class="sc">.</span>loc[index]<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">)"</span> <span class="cf">for</span> index <span class="kw">in</span> ct_normalized_filtered.index],</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>        x<span class="op">=</span>ct_normalized_filtered[treatment_type],</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span>treatment_type,</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a>        orientation<span class="op">=</span><span class="st">'h'</span>,</span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>        marker_color<span class="op">=</span>color</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>    barmode<span class="op">=</span><span class="st">'stack'</span>,</span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>    title_text<span class="op">=</span><span class="st">'How Different Treatments Are Used for Each Cancer Type (Minimum of 100 patients)'</span>,</span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>    title_font_size<span class="op">=</span><span class="dv">14</span>,</span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>    xaxis_title_text<span class="op">=</span><span class="st">'Percentage (%)'</span>,</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>    xaxis_title_font_size<span class="op">=</span><span class="dv">12</span>,</span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>    yaxis_title_text<span class="op">=</span><span class="st">'Cancer Site'</span>,</span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>    yaxis_title_font_size<span class="op">=</span><span class="dv">12</span>,</span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>    font_size<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb29-32"><a href="#cb29-32" aria-hidden="true" tabindex="-1"></a>    legend_title_text<span class="op">=</span><span class="st">'Treatment Type'</span>,</span>
+<span id="cb29-33"><a href="#cb29-33" aria-hidden="true" tabindex="-1"></a>    legend_title_font_size<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb29-34"><a href="#cb29-34" aria-hidden="true" tabindex="-1"></a>    legend_font_size<span class="op">=</span><span class="dv">8</span>,</span>
+<span id="cb29-35"><a href="#cb29-35" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb29-36"><a href="#cb29-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-37"><a href="#cb29-37" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+
+<div>                            <div id="112a23fe-69de-4d99-ba83-aefe50387ef8" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("112a23fe-69de-4d99-ba83-aefe50387ef8")) {                    Plotly.newPlot(                        "112a23fe-69de-4d99-ba83-aefe50387ef8",                        [{"marker":{"color":"black"},"name":"ChemoRT","orientation":"h","x":[37.03703703703704,10.832383124287343,21.0,87.88732394366198,51.56562291805463,42.13689482470785],"y":["Hypopharynx (Patients: 162)","Larynx (Patients: 877)","Lip & Oral Cavity (Patients: 100)","Nasopharynx (Patients: 355)","Oropharynx (Patients: 1501)","Total (Patients: 2995)"],"type":"bar"},{"marker":{"color":"red"},"name":"Postop RT alone","orientation":"h","x":[0.6172839506172839,0.11402508551881414,0.0,0.0,0.0,0.0667779632721202],"y":["Hypopharynx (Patients: 162)","Larynx (Patients: 877)","Lip & Oral Cavity (Patients: 100)","Nasopharynx (Patients: 355)","Oropharynx (Patients: 1501)","Total (Patients: 2995)"],"type":"bar"},{"marker":{"color":"purple"},"name":"RT + EGFRI","orientation":"h","x":[4.320987654320987,1.0262257696693273,5.0,0.0,3.1978680879413726,2.303839732888147],"y":["Hypopharynx (Patients: 162)","Larynx (Patients: 877)","Lip & Oral Cavity (Patients: 100)","Nasopharynx (Patients: 355)","Oropharynx (Patients: 1501)","Total (Patients: 2995)"],"type":"bar"},{"marker":{"color":"yellow"},"name":"RT alone","orientation":"h","x":[58.0246913580247,88.02736602052451,74.0,12.112676056338028,45.236508994004,55.49248747913189],"y":["Hypopharynx (Patients: 162)","Larynx (Patients: 877)","Lip & Oral Cavity (Patients: 100)","Nasopharynx (Patients: 355)","Oropharynx (Patients: 1501)","Total (Patients: 2995)"],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"title":{"font":{"size":14},"text":"How Different Treatments Are Used for Each Cancer Type (Minimum of 100 patients)"},"xaxis":{"title":{"font":{"size":12},"text":"Percentage (%)"}},"yaxis":{"title":{"font":{"size":12},"text":"Cancer Site"}},"font":{"size":10},"legend":{"title":{"font":{"size":10},"text":"Treatment Type"},"font":{"size":8}},"barmode":"stack"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('112a23fe-69de-4d99-ba83-aefe50387ef8');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+<p>Figure 4 shows that over half the patients with cancer in the oropharynx are treated with both radiation therapy and chemotherapy, but there is also a large amount of patients with cancer in the oropharynx who receive only radiation therapy. However, in the larynx the majority of patients receive only radiation therapy.</p>
+<p>Next we looked at the success rate of the treatment indicated by a relapse. There are two kinds of relapse that a patient can have: local and regional. A local relapse occurs when the patient has cancer in the same site as the first time they had cancer. A regional relapse occurs when the patient develops cancer in areas around the original cancer site. We decided to look into if relapse was common among patients with or without HPV for both local and regional relapse.</p>
+</section>
+<section id="figure-5" class="level4">
+<h4 class="anchored" data-anchor-id="figure-5">Figure 5:</h4>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Focus only on HPV testing and local relapse</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>alive <span class="op">=</span> [<span class="st">'Alive'</span>, <span class="st">'alive'</span>]</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>mask <span class="op">=</span> df[<span class="st">'Status'</span>].isin(alive)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>alive_patients <span class="op">=</span> df[mask]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Focus only on treatment type and local relapse</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>local <span class="op">=</span> alive_patients.groupby(<span class="st">'Local'</span>).treatment_type.value_counts().unstack()</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co">#fill null values with 0</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>local <span class="op">=</span> local.fillna(<span class="dv">0</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>local <span class="op">=</span> local.transpose()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>local <span class="op">=</span> pd.DataFrame(local)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>local <span class="op">=</span> (local<span class="op">/</span><span class="dv">2287</span>)<span class="op">*</span><span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar graph</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>local_relapse <span class="op">=</span> local.plot(kind <span class="op">=</span> <span class="st">'barh'</span>,</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                           stacked <span class="op">=</span> <span class="va">True</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                           width <span class="op">=</span> <span class="fl">0.75</span>,</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>                           xlabel <span class="op">=</span> <span class="st">'Percentage %'</span>,</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>                           ylabel <span class="op">=</span> <span class="st">'Treatment Type'</span>,</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>                           title <span class="op">=</span> <span class="st">'Treatment type with Local Relapse'</span>)</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>local_relapse.legend([<span class="st">'No'</span>, <span class="st">'Persistent'</span>,<span class="st">'Possible'</span>, <span class="st">'Yes'</span>], title <span class="op">=</span> <span class="st">'Relapse'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="final_report_files/figure-html/cell-28-output-1.png" width="674" height="449"></p>
+</div>
+</div>
+<p>In Figure 5, we can see that relapse was most common among patients who were only treated with radiotherapy. However, overall local relapse did not occur the majority of the time.</p>
+</section>
+<section id="figure-6" class="level4">
+<h4 class="anchored" data-anchor-id="figure-6">Figure 6:</h4>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Percentages of patients who had the cancer return Regionally</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>regional <span class="op">=</span> alive_patients.groupby(<span class="st">'Regional'</span>).treatment_type.value_counts().unstack()</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill null values with 0</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>regional <span class="op">=</span> regional.fillna(<span class="dv">0</span>)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>regional <span class="op">=</span> regional.transpose()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Finds the percentage of regional relapse</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>regional <span class="op">=</span> pd.DataFrame(regional)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>regional <span class="op">=</span> (regional<span class="op">/</span><span class="dv">2287</span>)<span class="op">*</span><span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>reg_relapse <span class="op">=</span> regional.plot(kind <span class="op">=</span> <span class="st">'barh'</span>,</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>                           stacked <span class="op">=</span> <span class="va">True</span>,</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>                           width <span class="op">=</span> <span class="fl">0.75</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>                           xlabel <span class="op">=</span> <span class="st">'Percentage %'</span>,</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>                            ylabel <span class="op">=</span> <span class="st">'Treatment Type'</span>,</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>                            title <span class="op">=</span> <span class="st">'Presence of HPV with Regional Relapse'</span>)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>reg_relapse.legend([<span class="st">'No'</span>, <span class="st">'Persistent'</span>,<span class="st">'Possible'</span>, <span class="st">'Yes'</span>], title <span class="op">=</span> <span class="st">'Relapse'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="30">
+<pre><code>&lt;matplotlib.legend.Legend at 0x1531db310&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="final_report_files/figure-html/cell-31-output-2.png" width="674" height="449"></p>
+</div>
+</div>
+<p>Figure 6 shows that regional relapse is not very common with any of the treatment types. Compared to Figure 5, we can observe that regional relapse is less common than local relapse.</p>
+</section>
+<section id="tableau-visualization" class="level4">
+<h4 class="anchored" data-anchor-id="tableau-visualization">Tableau Visualization:</h4>
+<section id="figure-1-1" class="level5">
+<h5 class="anchored" data-anchor-id="figure-1-1">Figure 1:</h5>
+<p>In the first visualization we analyze the status of the patients who went through Chemotherapy and if they are alive or have passed away.</p>
+<p>We also assess how many people went through chemotherapy as it is a rather dificult decision to make.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/chemo.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Chemotherapy vs Status</figcaption>
+</figure>
+</div>
+</section>
+<section id="figure-2-1" class="level5">
+<h5 class="anchored" data-anchor-id="figure-2-1">Figure 2:</h5>
+<p>In Figure 2 we analyze the last follow up date of patients who engaged in smoking.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/smoking-follow.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Smoking Status vs Last Follow Up Date</figcaption>
+</figure>
+</div>
+</section>
+<section id="figure-3-1" class="level5">
+<h5 class="anchored" data-anchor-id="figure-3-1">Figure 3:</h5>
+<p>Figure 3 shows a heatmap and the relation between age of the patients, diagnosis type, the dosage they are administered on, and the cancer substitute.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/diagnosis.jpeg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Heatmap of Diagnosis Type and Dosage</figcaption>
+</figure>
+</div>
+</section>
+<section id="figure-4-1" class="level5">
+<h5 class="anchored" data-anchor-id="figure-4-1">Figure 4:</h5>
+<p>In Figure 4 we analyze what sort of treatments did the patient receive and their smoking status. We visualize this data in a tabular format.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/smoking-treatment.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Treatment Type vs Smoking Status</figcaption>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="conclusion-bias" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-bias">Conclusion &amp; Bias:</h2>
+<p>Since the patient data was 80% male, the conclusions we have gained from the analysis of the dataset will mostly apply to men. However, according to the American Cancer Society, oropharyngeal cancer is twice as likely to occur in men than in women (“Risk Factors for Oral Cavity and Oropharyngeal Cancers”). It is possible that this is due to men historically being more likely to use tobacco products <strong><em><span class="citation" data-cites="noauthor_risk_nodate">(<a href="#ref-noauthor_risk_nodate" role="doc-biblioref"><span>“Risk <span>Factors</span> for <span>Oral</span> <span>Cavity</span> and <span>Oropharyngeal</span> <span>Cancers</span>”</span> n.d.</a>)</span></em></strong>.</p>
+<p>The second Tableau visualization shows that among the female patients, more of them were non-smokers and ex-smokers than current smokers, while the men had more current smokers and ex-smokers than non-smokers. Oral HPV is also most common in men, as 10% of men are exposed to it during their life, while only 3.6% of women are exposed to it during their lifetime <strong><em><span class="citation" data-cites="noauthor_hpv_2023">(<a href="#ref-noauthor_hpv_2023" role="doc-biblioref"><span>“<span>HPV</span> and <span>Oropharyngeal</span> <span>Cancer</span> <span></span> <span>CDC</span>”</span> 2023</a>)</span></em></strong>. While the conclusions we draw have a bias towards men because our patient sample is mostly male, this is understandable due to Oropharyngeal cancer being more common in men than women.</p>
+<p>From the above analysis, we can conclude that the most common site for Oropharyngeal cancer is the oropharynx (python Figure 1). This is particularly common for patients who are current smokers or ex-smokers (python Figure 1). This was also a very common site for patients who tested for HPV (python Figure 2). It did not matter if the test result was positive or negative, the oropharynx was the dominant cancer site for both results. HPV affects the throat and mouth, and is the cause of up to 70% of Oropharyngeal cancer cases <strong><em><span class="citation" data-cites="noauthor_hpv_2023">(<a href="#ref-noauthor_hpv_2023" role="doc-biblioref"><span>“<span>HPV</span> and <span>Oropharyngeal</span> <span>Cancer</span> <span></span> <span>CDC</span>”</span> 2023</a>)</span></em></strong>, so it is not surprising that patients with cancer in the oropharynx would be tested for HPV. Further analysis could be done for patients with cancer in the oropharynx to compare HPV status and their smoking status. The larynx was the second most common site for Oropharyngeal cancer (python Figure 1). This was also a common site for patients who have smoked in their life (python Figure 1) and it was the most common site for patients not tested for HPV (python Figure 2), indicating that this cancer site is most likely to occur because of smoking status. The third most common site was the nasopharynx, which was more common among patients who have never smoked (python Figure 1). This was also not a very common site for patients with HPV (python Figure 2). Since this site was common among patients who did not smoke and did not have HPV, the cause of the cancer here could be genetic. The common causes of Oropharyngeal cancer have influence over the cancer site.</p>
+<p>The distribution of treatment types revealed that radiotherapy and chemo-radiotherapy were the two most utilized treatment types for Oropharyngeal cancer, with radiation therapy alone being the most common treatment type (python Figure 3). Two of the three most common cancer sites had a more common treatment type. The Larynx, which was common among smokers, was mostly treated with only radiotherapy, while the Nasopharynx, which was common among non-smokers, was mostly treated with chemo-radiotherapy (python Figure 3). Chemo-radiotherapy and only radiotherapy were both common to treat cancer in the oropharynx (python Figure 3). Since, experts decide how to treat a patient based on how quickly a cancer is spreading <strong><em><span class="citation" data-cites="noauthor_cancer_2021">(<a href="#ref-noauthor_cancer_2021" role="doc-biblioref"><span>“Cancer <span>Treatment</span>: <span>Radiation</span> <span>Therapy</span> <span>Versus</span> <span>Chemotherapy</span>”</span> 2021</a>)</span></em></strong>, we can conclude that cancer in the Larynx does not spread very quickly since typically only radiotherapy is used to treat the cancer. Since this is a common site among smokers, it is possible that if smoking is the cause of cancer, the cancer remains isolated. Since cancer in the nasopharynx was mostly treated with chemo-radiotherapy, the cancer there most likely spreads quickly. Treatment for cancer in the oropharynx, seemed to be dependent on each case since chemoradiotherapy and radiotherapy alone were both very commonly used. Further study could be done to check if smoking and HPV status had influence over the decision to use chemoradiotherapy or only radiotherapy as treatment for cancer in the oropharynx.</p>
+<p>Our analysis indicated that treatment type had influence over the likeliness of the survival rate of the patient. Fewer patients who were treated with chemoradiotherapy passed away than patients who were not treated with chemoradiotherapy (Tableau Figure 1). However, there are many causes of death, so we are making the assumption that Oropharyngeal cancer is the cause of death when we draw this conclusion. An alternative method to looking into the success of treatment is if there was a relapse. In general, both local and regional relapses were not very common, but local relapse was more common than regional relapse (python Figures 5 and 6). Local relapse was also more common with only radiotherapy as a treatment (python Figure 5). However, these conclusions are based on the assumption that no data for the patient indicates that they have not relapsed. Patients who have passed away were removed from the data set for this analysis. It is also possible that a patient relapsed after the last patient check in, so it would not have been recorded. Treatments appear to be successful for patients who survived the cancer, and chemo-radiotherapy seems to improve these chances.</p>
+<p>Oropharyngeal cancer has several causes including HPV and smoking. These causes can influence where the cancer occurs. Cancer in the oropharynx seems to be caused by HPV and/or smoking, cancer in the larynx seems to be caused by smoking, and cancer in the nasopharynx seems to be caused by other reasons. Radiotherapy and chemo-radiotherapy are the two most common treatments to treat Oropharyngeal cancer. Cancer in the larynx is mostly treated with radiotherapy, cancer in the nasopharynx is mostly treated with chemo-radiotherapy, and cancer in the oropharynx is treated with both. Less patients died and relapsed when chemo-radiotherapy was used to treat the Oropharyngeal cancer. However, the majority of patients who survived treatment, did not relapse by the time the study was concluded. It is important to identify these trends and biases within the dataset, as it can help improve the chances of survival and help identify treatment types for future patients who develop Oropharyngeal cancer.</p>
+</section>
+<section id="citations" class="level2 unnumbered">
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Citations:</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-noauthor_cancer_2021" class="csl-entry" role="listitem">
+<span>“Cancer <span>Treatment</span>: <span>Radiation</span> <span>Therapy</span> <span>Versus</span> <span>Chemotherapy</span>.”</span> 2021. <em>Lindenberg Cancer &amp; Hematology Center Marlton, NJ 08053</em>. <a href="https://lindenbergcancer.com/blog/cancer-treatment-radiation-therapy-versus-chemotherapy/">https://lindenbergcancer.com/blog/cancer-treatment-radiation-therapy-versus-chemotherapy/</a>.
+</div>
+<div id="ref-noauthor_hpv_2023" class="csl-entry" role="listitem">
+<span>“<span>HPV</span> and <span>Oropharyngeal</span> <span>Cancer</span> <span></span> <span>CDC</span>.”</span> 2023. <a href="https://www.cdc.gov/cancer/hpv/basic_info/hpv_oropharyngeal.htm">https://www.cdc.gov/cancer/hpv/basic_info/hpv_oropharyngeal.htm</a>.
+</div>
+<div id="ref-noauthor_oropharyngeal_2023" class="csl-entry" role="listitem">
+<span>“Oropharyngeal <span>Cancer</span> <span>Treatment</span> - <span>NCI</span>.”</span> 2023. {pdqCancerInfoSummary}. <a href="https://www.cancer.gov/types/head-and-neck/patient/adult/oropharyngeal-treatment-pdq">https://www.cancer.gov/types/head-and-neck/patient/adult/oropharyngeal-treatment-pdq</a>.
+</div>
+<div id="ref-noauthor_oropharyngeal_nodate" class="csl-entry" role="listitem">
+<span>“Oropharyngeal <span>Cancer</span>: <span>Symptoms</span>, <span>Stages</span> &amp; <span>Prognosis</span>.”</span> n.d. <em>Cleveland Clinic</em>. Accessed September 20, 2023. <a href="https://my.clevelandclinic.org/health/diseases/12180-oropharyngeal-cancer">https://my.clevelandclinic.org/health/diseases/12180-oropharyngeal-cancer</a>.
+</div>
+<div id="ref-noauthor_recurrent_2016" class="csl-entry" role="listitem">
+<span>“Recurrent <span>Cancer</span> - <span>NCI</span>.”</span> 2016. {cgvArticle}. <a href="https://www.cancer.gov/types/recurrent-cancer">https://www.cancer.gov/types/recurrent-cancer</a>.
+</div>
+<div id="ref-noauthor_risk_nodate" class="csl-entry" role="listitem">
+<span>“Risk <span>Factors</span> for <span>Oral</span> <span>Cavity</span> and <span>Oropharyngeal</span> <span>Cancers</span>.”</span> n.d. Accessed September 29, 2023. <a href="https://www.cancer.org/cancer/types/oral-cavity-and-oropharyngeal-cancer/causes-risks-prevention/risk-factors.html">https://www.cancer.org/cancer/types/oral-cavity-and-oropharyngeal-cancer/causes-risks-prevention/risk-factors.html</a>.
+</div>
+<div id="ref-welch_computed_2023" class="csl-entry" role="listitem">
+Welch, Mattea L., Sejin Kim, Andrew Hope, Shao Hui Huang, Zhibin Lu, Joseph Marsilla, Michal Kazmierski, et al. 2023. <span>“Computed <span>Tomography</span> <span>Images</span> from <span>Large</span> <span>Head</span> and <span>Neck</span> <span>Cohort</span> (<span>RADCURE</span>).”</span> The Cancer Imaging Archive. <a href="https://doi.org/10.7937/J47W-NM11">https://doi.org/10.7937/J47W-NM11</a>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
